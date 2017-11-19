@@ -31,13 +31,11 @@ padding-left: 100px;
 .headerBG {
     background-image: url('../img/cartoonBG.jpg');
     background-repeat: repeat;
-    width: 100%;
     background-position: center;
     background-color: lightgray;
     background-size: cover;
     margin-top: -75px;
     min-width: 650px;
-
 }
 
 .headerDiv {
