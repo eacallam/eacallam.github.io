@@ -49,6 +49,7 @@ padding-left: 75px;
     width: 100%;
     border-right: 7px solid black;
     min-width: 700px;
+    margin-bottom: 30px;
 }
 
 .headerDiv {
@@ -64,7 +65,7 @@ padding-left: 75px;
 .headerDivPadding {
     padding-top: 40px;
     padding-right: 40px;
-    padding-left: 15px;
+    padding-left: 28px;
     padding-bottom: 0px;
 
 }
@@ -122,7 +123,7 @@ text-align:center;
 }
 
 .contactMe{
-    max-width: 190px;
+    max-width: 250px;
     text-align: center;
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
@@ -156,6 +157,11 @@ text-align:center;
     margin-left: auto; 
     margin-right: auto;
 }
+
+.socialMediaIconSticky a:link, .socialMediaIconSticky a:visited{
+    color:black;
+}
+
 
 .language{
     font-family: 'Permanent Marker', cursive;
