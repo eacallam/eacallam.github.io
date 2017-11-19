@@ -2,7 +2,7 @@ body{
 color: black;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+
 }
 .jumbotron{
     border-bottom: 15px solid black;
@@ -42,7 +42,7 @@ color: black;
 #headerDivFont{
     color: black;
     font-size: 13px;
-    font-family: arial;
+    font-family: tahoma;
 }
 
 .headerPicPadding{
@@ -114,7 +114,7 @@ text-align:center;
     min-height: 335px;
     background-repeat: no-repeat;
     max-width: 350px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .socialMediaIconSticky{
@@ -136,10 +136,11 @@ text-align:center;
     background-color: none;
 }
 
-.languages{
-    font-family: 'Permanent Marker', cursive;
+
+.languagesTop{
+    font-family: 'Patrick Hand SC', cursive;
     color: black;
-    font-size: 35px;
+    font-size: 38px;
     text-align: center;
 }
 
