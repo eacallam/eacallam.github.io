@@ -13,7 +13,7 @@ html,body {
 }
 
 .container-fluid {
-padding-right:-30px;
+padding-right:-100px;
 padding-left:0;
 padding-top: 150px;
 border-bottom: 15px solid black;
@@ -145,6 +145,7 @@ text-align:center;
     min-height: 335px;
     background-repeat: no-repeat;
     width: 100%;
+    margin-right: 0px;
 }
 
 .socialMediaIconSticky{
