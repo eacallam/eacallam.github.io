@@ -12,6 +12,7 @@ margin-right:auto;
 margin-left:auto;
 padding-top: 150px;
 border-bottom: 15px solid black;
+min-width: 650px;
  }
 
 .row{
