@@ -67,7 +67,7 @@ padding-left: 100px;
 .headerDivPadding {
     padding-top: 40px;
     padding-right: 40px;
-    padding-left: 28px;
+    padding-left: 15px;
     padding-bottom: 0px;
 
 }
@@ -148,6 +148,7 @@ text-align:center;
     min-height: 335px;
     background-repeat: no-repeat;
     max-width: 350px;
+    width: 100%;
 }
 
 .socialMediaIconSticky{
