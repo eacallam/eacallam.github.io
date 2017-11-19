@@ -4,6 +4,13 @@ color: black;
     font-family: 'Roboto', sans-serif;
 
 }
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
+
 .jumbotron{
     border-bottom: 15px solid black;
 }
