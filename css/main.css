@@ -9,6 +9,7 @@ color: black;
 }
 .headerBG {
     background-image: url('../img/cartoonBG.jpg');
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: lightgray;
@@ -114,7 +115,7 @@ text-align:center;
     min-height: 335px;
     background-repeat: no-repeat;
     max-width: 350px;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 
 .socialMediaIconSticky{
