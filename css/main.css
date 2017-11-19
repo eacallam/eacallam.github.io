@@ -28,11 +28,13 @@ min-width: 650px;
 .row{
 padding-right:0;
 padding-left:0;
+width: 100%;
 }
 
 .col{
 padding-right:0;
 padding-left:0;
+width: 100%;
 }
 
 .headerRow{
