@@ -6,7 +6,6 @@ color: black;
 }
 .jumbotron{
     border-bottom: 15px solid black;
-    height: 90vw;
 }
 .headerBG {
     background-image: url('../img/cartoonBG.jpg');
