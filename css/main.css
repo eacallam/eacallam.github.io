@@ -36,7 +36,7 @@ padding-left: 100px;
 .headerBG {
     background-image: url('../img/cartoonBG.jpg');
     background-repeat: repeat;
-    width: auto;
+    width: 100%;
     background-position: center;
     background-color: lightgray;
     background-size: cover;
@@ -137,8 +137,6 @@ text-align:center;
     min-height: 335px;
     background-repeat: no-repeat;
     max-width: 350px;
-    margin-left: 0px;
-    padding-left: 0px;
 }
 
 .socialMediaIconSticky{
