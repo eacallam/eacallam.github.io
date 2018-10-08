@@ -7,11 +7,11 @@ $(document).ready(function () {
         $("#headerPicture").attr('src', "img/karaokePicture.png");
     });
 
-    $('#3').on('click', function () {
-        $("#headerPicture").attr('src', "img/jPicture.png");
-    });
+    // $('#3').on('click', function () {
+    //     $("#headerPicture").attr('src', "img/jPicture.png");
+    // });
 
-    $('#4').on('click', function () {
+    $('#3').on('click', function () {
         $("#headerPicture").attr('src', "img/youngElizabeth.png");
     });
 
@@ -31,5 +31,3 @@ $(function () {
     showText("#headerName", "elizabeth callam", 0, 150);
 
         });
-
-
