@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
 
     $('#2').on('click', function () {
-        $("#headerPicture").attr('src', "img/headshot.jpg");
+        $("#headerPicture").attr('src', "img/headshot.JPG");
     });
 
     $('#3').on('click', function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
 
     $('#4').on('click', function () {
-        $("#headerPicture").attr('src', "img/computer.jpg");
+        $("#headerPicture").attr('src', "img/computer.JPG");
     });
 
 
