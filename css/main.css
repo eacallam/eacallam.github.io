@@ -1,207 +1,207 @@
-body{
-color: black;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-
+body {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 
 html,body {
   width:100%;
-  min-width:100%;
-  max-width:100%;
-
+  padding: 0px;
+  margin: 0px;
 }
 
 .container-fluid {
-padding-right:-100px;
-padding-left:0;
-padding-top: 150px;
-border-bottom: 15px solid black;
-width: 100%;
-border-right: 7px solid black;
-min-width: 800px;
- }
-
-.row{
-padding-right:0;
-padding-left:0;
-width: 100%;
+  padding-right:-100px;
+  padding-left:0;
+  padding-top: 150px;
+  border-bottom: 3px solid black;
 }
 
-.col{
-padding-right:0;
-padding-left:0;
-width: 100%;
+.row {
+  padding-right:0px;
+  padding-left:0px;
 }
 
-.headerRow{
-padding-left: 100px;
+.col {
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.headerRow {
+  margin-left: 300px;
 }
 
 
 .headerBG {
-    background-image: url('../img/headerDivBG.jpeg');
-    background-repeat: repeat;
-    background-position: center;
-    background-color: lightgray;
-    background-size: cover;
-    margin-top: -75px;
-    width: 100%;
-    border-right: 7px solid black;
-    min-width: 700px;
-    margin-bottom: 30px;
+  background-image: url('../img/pencils.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-top: -75px;
+  min-width: 700px;
+  margin-bottom: 30px;
 }
 
 .headerDiv {
-    height: 323px;
-    width: 575px;
-    color: white;
-    margin-bottom: 50px;
-    margin-left: 80px;
-    top: -68px;
-    }
-
-.headerDiv a:link, .headerDiv a:visited{
-    color: rgb(244, 67, 54);
+  height: 350px;
+  max-width: 560px;
+  color: white;
+  top: -48px;
+  margin: 10px;
+  float: right;
+  color: white;
+  font-size: 14.5px;
+  font-family: Arial;
 }
 
-.headerDiv a:hover{
-    color: black;
+.headerDiv a:link, a:visited {
+  color: white;
 }
 
-.headerDivPadding {
-    padding-top: 15px;
-    padding-right: 40px;
-    padding-left: 28px;
-    padding-bottom: 0px;
-
-}
-
-#headerDivFont{
-    color: white;
-    font-size: 14.5px;
-    font-family: Arial;
-}
-
-.headerPicPadding{
-    top: -160px;
+.headerDiv a:hover {
+  color: rgb(244, 67, 54);
 }
 
 #headerPicture {
   object-fit: contain;
-  width: 260px;
-  margin-left: -50px;
-  padding-top: 70px;
+  max-width: 260px;
+  border: 1px solid black;
+  float: right;
+}
+
+#emailForm {
+  color: black;
+  font-size: 14.5px;
+  font-family: Arial;
+}
+
+#emailForm a {
+  color: black;
+}
+
+.pictureDiv {
+  max-width: 260px;
+  float: right;
 }
 
 .headerName {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
-    position: relative;
-    top: -55px;
-    left: 107px;
-    background-repeat: no-repeat;
-    color: white;
+  font-family: 'Georgia';
+  font-size: 30px;
+  position: relative;
+  top: -55px;
+  left: -125px;
+  color: white;
+  float: right;
 }
 
-.headerName:hover{
-      background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+.headerName:hover {
+  color: black;
 }
 
-.bodyBG {
-    background-image: url('../img/graphPaper4.png');
-}
-
-h2{
-   font-family: 'Finger Paint', cursive;
-     background-image: url('../img/highlight (2).png');
-     background-repeat: no-repeat;
-}
-
-.mainDivPadding{
+.mainDivPadding {
   padding: 10px;
 }
 
-.pictureButtons{
-  text-align:center;
-  margin-left: -150px;
+.pictureButtons {
+  width: 260px;
+  margin-right: 530px;
+  margin-top: -100px;
+  float: right;
+  text-align: center;
 }
 
-.examplePictures{
-    border: 2px solid black;
-    margin-top: 15px;
-
+.examplePictures {
+  border: 1px solid grey;
+  margin-top: 15px;
 }
 
-.contactMe{
-    max-width: 250px;
-    text-align: center;
-    font-family: 'Finger Paint', cursive;
-    font-size: 25px;
-    background-image: url('../img/highlight (2).png');
-    margin-left: auto;
-    margin-right: auto;
+.contactMe {
+  max-width: 250px;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
 }
 
-.socialMedia{
-    text-align: center;
-    color: black;
+.socialMedia {
+  text-align: center;
+  color: white;
 }
 
-.socialMediaIcon{
-    margin-right: 15px;
+.socialMediaIcon {
+  margin-right: 15px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
 }
 
 .stickyNote {
-    background-image: url('../img/stickyNote.png');
-    min-height: 335px;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin-right: 0px;
-    min-width: 360px;
+  background-image: url('../img/stickyNote.png');
+  min-height: 335px;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-right: 0px;
+  min-width: 360px;
 }
 
-.socialMediaIconSticky{
-    margin:25px;
-    padding-left: 70px;
-    margin-top: -5px;
-    margin-left: auto;
-    margin-right: auto;
-
+.socialMediaIconSticky {
+  margin: 25px;
+  padding-left: 70px;
+  margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.socialMediaIconSticky a:link, .socialMediaIconSticky a:visited{
-    color:black;
+.socialMediaIconSticky a:link, .socialMediaIconSticky a:visited {
+  letter-spacing: 10px;
+  color:black;
 }
 
-.socialMediaIconSticky a:hover{
-    color: rgb(244, 67, 54);
+.socialMediaIconSticky a:hover {
+  color: rgb(244, 67, 54);
 }
 
-.language{
-    font-family: 'Permanent Marker', cursive;
-    color: blue;
-    font-size: 25px;
+.languagesTop {
+  font-family: 'Arial';
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-.btn-site {
-    font-family: 'Finger Paint', cursive;
-    background-color: none;
+.carousel img {
+   margin: auto;
+   object-fit: contain;
+   max-height: 300px;
+   padding-bottom: 0px;
+   margin-bottom: 0px;
 }
 
-
-.languagesTop{
-    font-family: 'Patrick Hand SC', cursive;
-    color: black;
-    font-size: 38px;
-    text-align: center;
+.carousel a {
+  font-weight: bold;
+  color: black;
+  font-size: 33px;
 }
 
-footer{
-    text-align: center;
+.carousel-caption {
+  color: black;
+  background-color: rgba(220,220,220, 0.5);
+  padding: 0px;
+}
 
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
 }

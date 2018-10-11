@@ -1,18 +1,18 @@
 $(document).ready(function () {
     $('#1').on('click', function () {
-        $("#headerPicture").attr('src', "img/mainPicture.png");
+        $("#headerPicture").attr('src', "img/garden.jpeg");
     });
 
     $('#2').on('click', function () {
-        $("#headerPicture").attr('src', "img/karaokePicture.png");
+        $("#headerPicture").attr('src', "img/headshot.jpg");
     });
 
-    // $('#3').on('click', function () {
-    //     $("#headerPicture").attr('src', "img/jPicture.png");
-    // });
-
     $('#3').on('click', function () {
-        $("#headerPicture").attr('src', "img/youngElizabeth.png");
+        $("#headerPicture").attr('src', "img/jump.jpg");
+    });
+
+    $('#4').on('click', function () {
+        $("#headerPicture").attr('src', "img/computer.jpg");
     });
 
 
