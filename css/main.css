@@ -86,16 +86,17 @@ html,body {
 
 .headerName {
   font-family: 'Georgia';
+  width: 250px;
   font-size: 30px;
   position: relative;
   top: -55px;
-  left: -125px;
-  color: white;
+  left: -155px;
+  color: black;
   float: right;
 }
 
 .headerName:hover {
-  color: black;
+  color: white;
 }
 
 .mainDivPadding {
