@@ -49,9 +49,9 @@ html,body {
   top: -48px;
   margin: 10px;
   float: right;
-  color: white;
   font-size: 14.5px;
   font-family: Arial;
+  margin-top: 0px;
 }
 
 .headerDiv a:link, a:visited {
@@ -86,13 +86,11 @@ html,body {
 
 .headerName {
   font-family: 'Georgia';
-  width: 250px;
   font-size: 30px;
-  position: relative;
-  top: -55px;
-  left: -155px;
+  width: 300px;
   color: black;
-  float: right;
+  top: -60px;
+  padding-left: 303px;
 }
 
 .headerName:hover {

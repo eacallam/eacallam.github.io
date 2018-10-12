@@ -28,6 +28,6 @@ var showText = function (target, message, index, interval) {
 }
 
 $(function () {
-    showText("#headerName", "elizabeth callam", 0, 150);
+    showText("#headerName", "beth callam", 0, 150);
 
         });
