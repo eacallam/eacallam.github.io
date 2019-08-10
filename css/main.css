@@ -12,7 +12,7 @@ html,body {
 
 .container-fluid {
   padding-right:-100px;
-  padding-left:0;
+  padding-left: 0px;
   padding-top: 150px;
   border-bottom: 3px solid black;
 }
@@ -212,7 +212,7 @@ footer {
 form div label {
   position: absolute;
   top: 10px;
-  left: 8px;
+  left: 19px;
   pointer-events: none;
   color: black;
 }
@@ -265,6 +265,7 @@ form .field_with_errors ~ label
     margin: 0px;
     max-width: 500px;
     height: auto;
+    padding-top: 12px;
   }
   .pictureDiv {
     margin-left: 30px;
@@ -277,5 +278,14 @@ form .field_with_errors ~ label
   }
   .headerBG {
     min-width: 0px;
+  }
+  .container-fluid {
+    padding-right:-100px;
+    padding-left: 0px;
+    padding-top: 100px;
+    border-bottom: 3px solid black;
+  }
+  form {
+    padding-left: 25px;
   }
 }

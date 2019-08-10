@@ -108,12 +108,16 @@
                  </p>
              </div>
          </div>
-         <div id="emailForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+         <div id="emailForm" class="form-group row">
              <form action="https://formspree.io/ecallam@alumni.nd.edu"
                    method="POST">
-                 <div class="field"><input type="text" name="name" size="51" placeholder=" "><label>Name</label></div>
-                 <div class="field"><input type="email" name="_replyto" size="51" placeholder=" "><label>E-mail</label></div>
-                 <div class="field"><textarea name="message" rows="10" cols="50" placeholder="Message"></textarea></div>
+                   <div class="row">
+                    <div class="field col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><input type="text" class="form-control" name="name" placeholder=" "><label>Name</label></div>
+                   </div>
+                   <div class="row">
+                    <div class="field col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><input type="email" class="form-control" name="_replyto" placeholder=" "><label>E-mail</label></div>
+                   </div>
+                   <div class="field"><textarea name="message" rows="10" cols="50" placeholder="Message"></textarea></div>
                  <input class="button" type="submit" value="Send">
              </form>
          </div>
