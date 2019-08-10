@@ -1,14 +1,13 @@
 body {
   color: black;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
   background-color: white;
 }
 
 html,body {
-  width:100%;
   padding: 0px;
   margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container-fluid {
@@ -32,7 +31,6 @@ html,body {
   margin-left: 300px;
 }
 
-
 .headerBG {
   background-image: url('../img/pencils.jpg');
   background-position: center;
@@ -45,17 +43,13 @@ html,body {
 .headerDiv {
   height: 350px;
   max-width: 560px;
-  color: white;
-  top: -48px;
+  top: -20px;
   margin: 10px;
-  float: right;
   font-size: 14.5px;
-  font-family: Arial;
-  margin-top: 0px;
 }
 
 .headerDiv a:link, a:visited {
-  color: white;
+  color: black;
 }
 
 .headerDiv a:hover {
@@ -72,7 +66,6 @@ html,body {
 #emailForm {
   color: black;
   font-size: 14.5px;
-  font-family: Arial;
 }
 
 #emailForm a {
@@ -81,16 +74,10 @@ html,body {
 
 .pictureDiv {
   max-width: 260px;
-  float: right;
 }
 
-.headerName {
-  font-family: 'Georgia';
+#headerName {
   font-size: 30px;
-  width: 100px;
-  color: black;
-  top: -60px;
-  padding-left: 303px;
 }
 
 .headerName:hover {
@@ -117,7 +104,6 @@ html,body {
 .contactMe {
   max-width: 250px;
   text-align: center;
-  font-family: 'Arial';
   font-size: 20px;
   font-weight: bold;
   margin-left: auto;
@@ -128,6 +114,8 @@ html,body {
 .socialMedia {
   text-align: center;
   color: white;
+  padding-top: 8px;
+  font-size: 16px;
 }
 
 .socialMediaIcon {
@@ -140,18 +128,24 @@ html,body {
 .stickyNote {
   background-image: url('../img/stickyNote.png');
   min-height: 335px;
+  max-width: 290px;
   background-repeat: no-repeat;
-  width: 100%;
-  margin-right: 0px;
-  min-width: 360px;
+  float: right;
+  padding-right: 22px;
+  margin-right: 40px;
 }
 
 .socialMediaIconSticky {
-  margin: 25px;
+  margin: 15px;
   padding-left: 70px;
-  margin-top: -5px;
+  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.stickyScript {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 35px;
 }
 
 .socialMediaIconSticky a:link, .socialMediaIconSticky a:visited {
@@ -164,7 +158,6 @@ html,body {
 }
 
 .languagesTop {
-  font-family: 'Arial';
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -203,4 +196,74 @@ html,body {
 footer {
   text-align: center;
   font-size: 14px;
+  color: grey;
+  margin-top: 30px;
+}
+
+form div label {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  pointer-events: none;
+  color: black;
+}
+
+form input, textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form .field {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #909090 !important;
+  opacity: 1; /* Firefox */
+}
+
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #909090 !important;
+}
+
+ ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #909090 !important;
+}
+
+ form div {
+  position: relative;
+}
+
+ form input:not(.button) {
+  padding-top: 15px !important;
+}
+
+form input:focus ~ label,
+form input:valid:not(:placeholder-shown) ~ label,
+form input:invalid:not(:placeholder-shown) ~ label,
+form .field_with_errors ~ label
+{
+  top: 4px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .headerRow {
+    margin: 0px;
+  }
+  .headerDiv {
+    margin: 0px;
+    max-width: 500px;
+    height: auto;
+  }
+  .pictureDiv {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .stickyNote {
+    padding: 0px;
+    margin: 0px;
+    float: none;
+  }
 }
