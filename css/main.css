@@ -114,7 +114,7 @@ html,body {
 .socialMedia {
   text-align: center;
   color: white;
-  padding-top: 8px;
+  padding-top: 15px;
   font-size: 16px;
 }
 
@@ -155,6 +155,16 @@ html,body {
 
 .socialMediaIconSticky a:hover {
   color: rgb(244, 67, 54);
+}
+
+#shatter {
+  background-color: white;
+  opacity: 0.8;
+}
+
+#shatter a {
+  text-weight: bold;
+  text-decoration: underline;
 }
 
 .languagesTop {
