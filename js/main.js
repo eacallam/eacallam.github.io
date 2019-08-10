@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
 
     $('#2').on('click', function () {
-        $("#headerPicture").attr('src', "img/headshot.JPG");
+        $("#headerPicture").attr('src', "img/beth.JPG");
     });
 
     $('#3').on('click', function () {
