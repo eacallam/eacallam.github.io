@@ -96,14 +96,6 @@ html,body {
   padding: 10px;
 }
 
-.pictureButtons {
-  width: 260px;
-  margin-right: 530px;
-  margin-top: -100px;
-  float: right;
-  text-align: center;
-}
-
 .examplePictures {
   border: 1px solid grey;
   margin-top: 15px;
@@ -282,5 +274,8 @@ form .field_with_errors ~ label
     padding: 0px;
     margin: 0px;
     float: none;
+  }
+  .headerBG {
+    min-width: 0px;
   }
 }
