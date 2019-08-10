@@ -56,6 +56,14 @@ html,body {
   color: rgb(244, 67, 54);
 }
 
+.pictureDiv a:link, a:visited {
+  color: black;
+}
+
+.pictureDiv a:hover {
+  color: rgb(244, 67, 54);
+}
+
 #headerPicture {
   object-fit: contain;
   max-width: 260px;
@@ -163,7 +171,6 @@ html,body {
 }
 
 #shatter a {
-  text-weight: bold;
   text-decoration: underline;
 }
 
