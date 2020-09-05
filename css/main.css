@@ -14,6 +14,11 @@ html,body {
   margin-bottom: 50px;
 }
 
+.languagesContainer {
+  display: flex;
+  margin: 5px;
+}
+
 a {
   color: rgba(244, 67, 54)
 }
