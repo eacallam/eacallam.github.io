@@ -10,6 +10,8 @@
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="pageContainer">
@@ -40,13 +42,123 @@
       </div>
 
       <div class="container">
-        <p class="languagesTop">JavaScript | Vue | Ruby | Rails | jQuery | SQL | Responsive Design | A11y</p>
-        <!-- <ul>
-          <li>Bootcamp</li>
-          <li>CoverMyMeds</li>
-          <li>Shatter</li>
-        </ul> -->
-        <div class="comingSoon">Coming soon</div>
+        <p class="languagesTop highlight">JavaScript | Vue | Ruby | Rails | jQuery | SQL | Responsive Design | A11y</p>
+        <div class="resumeContentContainer">
+          <p class="resumeHeader">CoverMyMeds</p>
+            <p class="resumeSecondaryHeader">MAY 2018 - PRESENT</p>
+            <ul class="resumeInfoList">
+              <li class="resumeInfoItem">Completed eight-month apprenticeship contributing full-stack to Rails and JavaScript projects for pharmacy customers in a Large Scale Scrum environment</li>
+              <li class="resumeInfoItem">Collaborate with UX designers to implement mocks and design front-end architecture for <a href="https://www.scripthero.com" class="highlight">ScriptHero</a></li>
+              <li class="resumeInfoItem">Communicate across departments to collaborate and understand customer needs and business requirements</li>
+            </ul>
+            <div class="row">
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openFirstModal();currentSlide(1, 'modalSlidesFirst')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openFirstModal();currentSlide(2, 'modalSlidesFirst')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openFirstModal();currentSlide(3, 'modalSlidesFirst')" class="hover-shadow resumeImage">
+              </div>
+            </div>
+            <div id="resumeModalFirst" class="modal">
+              <span class="close cursor" onclick="closeFirstModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="modalSlidesFirst">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class="modalSlidesFirst">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class="modalSlidesFirst">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'modalSlidesFirst')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'modalSlidesFirst')">&#10095;</a>
+              </div>
+            </div> 
+          <p class="resumeHeader">Shatter</p>
+            <p class="resumeSecondaryHeader">JAN 2019 - SEP 2019</p>
+            <ul class="resumeInfoList">
+              <li class="resumeInfoItem">Founded in the 2018 GiveBackHack, Shatter focuses on addressing unconscious gender bias in the job market</li>
+              <li class="resumeInfoItem">Agile team building novel features (e.g. Chrome extension) and evaluating customer impact and market value</li>
+              <li class="resumeInfoItem">Worked with UX designers to implement website and extension mocks</li>
+            </ul>
+            <div class="row">
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openSecondModal();currentSlide(1, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openSecondModal();currentSlide(2, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openSecondModal();currentSlide(3, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+              </div>
+            </div>
+            <div id="resumeModalSecond" class="modal">
+              <span class="close cursor" onclick="closeSecondModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="modalSlidesSecond">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class="modalSlidesSecond">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class=modalSlidesSecond">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'modalSlidesSecond')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'modalSlidesSecond')">&#10095;</a>
+              </div>
+            </div> 
+          <p class="resumeHeader">WeCanCodeIT</p>
+            <p class="resumeSecondaryHeader">FALL 2017</p>
+            <ul class="resumeInfoList">
+              <li class="resumeInfoItem">Graduated with Certificate in Software Development</li>
+              <li class="resumeInfoItem">Learned full-stack development through instruction and hands-on projects</li>
+              <li class="resumeInfoItem">Worked as a developer to plan and design professionally programmed applications in collaborative team-based and independent settings</li>
+            </ul>
+            <div class="row">
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openThirdModal();currentSlide(1, 'modalSlidesThird')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openThirdModal();currentSlide(2, 'modalSlidesThird')" class="hover-shadow resumeImage">
+              </div>
+              <div class="column">
+                <img src="img\comingsoon.jpg" onclick="openThirdModal();currentSlide(3, 'modalSlidesThird')" class="hover-shadow resumeImage">
+              </div>
+            </div>
+            <div id="resumeModalThird" class="modal">
+              <span class="close cursor" onclick="closeThirdModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="modalSlidesThird">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class="modalSlidesThird">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <div class="modalSlidesThird">
+                  <img src="img\comingsoon.jpg" class="modalImage">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'modalSlidesThird')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'modalSlidesThird')">&#10095;</a>
+              </div>
+            </div> 
+        </div>
       </div>
 
         <!-- <div id="emailForm" class="form-group">
@@ -64,10 +176,7 @@
                 <input class="button" type="submit" value="Send">
           </form>
         </div> -->
-      <!-- </div> -->
-      <footer>
-        Site designed by Beth Callam with imagery from Unsplash.
-      </footer>
+    <footer>Site designed by Beth Callam with imagery from Unsplash</footer>
     </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
