@@ -140,7 +140,6 @@ footer {
   color: black;
   background-color: #EEEEEE;
   padding: 8px;
-  width: 100%;
 }
 
 form div label {
@@ -201,8 +200,8 @@ form .field_with_errors ~ label
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .highlight {
