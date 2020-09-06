@@ -354,4 +354,15 @@ img.hover-shadow {
     margin: 5px;
     max-width: 200px;
   }
+  .headerBG {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 400px;
+    background-image: none;
+    background: linear-gradient(90deg, #ffffff 70%, #ffe59c 30%);
+  }
+  .headerDiv {
+    max-width: 70%;
+  }
 }
