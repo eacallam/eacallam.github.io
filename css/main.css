@@ -347,3 +347,11 @@ img.hover-shadow {
   margin: 5px;
   max-width: 500px;
 }
+
+@media only screen and (max-width: 767px) {
+  .modalImage {
+    border: 1px solid black;
+    margin: 5px;
+    max-width: 200px;
+  }
+}
