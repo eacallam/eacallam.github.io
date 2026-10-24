@@ -32,17 +32,28 @@ li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   min-height: 400px;
-  background-color: #ffd6a5;
+  /* Garden palette: dappled sunlight, mint and sage leaves, poppy-red blooms */
+  background-color: #dcefd4;
   background-image:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.55) 0 6px, transparent 7px),
-    radial-gradient(circle at 88% 22%, rgba(255, 255, 255, 0.5) 0 10px, transparent 11px),
-    radial-gradient(circle at 72% 85%, rgba(255, 255, 255, 0.45) 0 8px, transparent 9px),
-    radial-gradient(circle at 30% 90%, rgba(255, 255, 255, 0.5) 0 5px, transparent 6px),
-    radial-gradient(circle at 5% 0%, #ff7a6b 0%, rgba(255, 122, 107, 0) 45%),
-    radial-gradient(circle at 100% 0%, #ffd23f 0%, rgba(255, 210, 63, 0) 45%),
-    radial-gradient(circle at 100% 100%, #3ec6c0 0%, rgba(62, 198, 192, 0) 50%),
-    radial-gradient(circle at 0% 100%, #a78bfa 0%, rgba(167, 139, 250, 0) 50%),
-    linear-gradient(135deg, #ff9a8b 0%, #ffd6a5 40%, #b5f0d8 75%, #c9b8ff 100%);
+    radial-gradient(circle at 8% 14%, #e2463c 0 5px, transparent 6px),
+    radial-gradient(circle at 46% 8%, rgba(255, 252, 230, 0.95) 0 7px, transparent 8px),
+    radial-gradient(circle at 93% 30%, #e2463c 0 7px, transparent 8px),
+    radial-gradient(circle at 63% 92%, #f4a7a0 0 6px, transparent 7px),
+    radial-gradient(circle at 25% 80%, rgba(255, 252, 230, 0.95) 0 5px, transparent 6px),
+    radial-gradient(circle at 38% 55%, rgba(255, 252, 230, 0.8) 0 4px, transparent 5px),
+    radial-gradient(circle at 85% 70%, rgba(255, 252, 230, 0.9) 0 9px, transparent 10px),
+    radial-gradient(circle at 15% 45%, #f4a7a0 0 4px, transparent 5px),
+    radial-gradient(circle at 30% 30%, rgba(255, 250, 215, 0.55) 0 38px, transparent 40px),
+    radial-gradient(circle at 76% 12%, rgba(255, 250, 215, 0.45) 0 26px, transparent 28px),
+    radial-gradient(circle at 55% 75%, rgba(255, 255, 255, 0.35) 0 55px, transparent 57px),
+    radial-gradient(circle at 4% 70%, rgba(255, 250, 215, 0.5) 0 30px, transparent 32px),
+    radial-gradient(circle at 97% 92%, rgba(244, 167, 160, 0.45) 0 34px, transparent 36px),
+    radial-gradient(circle at 20% 4%, rgba(226, 70, 60, 0.25) 0 22px, transparent 24px),
+    radial-gradient(ellipse at 50% -10%, #fff6cc 0%, rgba(255, 246, 204, 0) 55%),
+    radial-gradient(circle at 0% 100%, #8eb289 0%, rgba(142, 178, 137, 0) 45%),
+    radial-gradient(circle at 100% 100%, #6f9f68 0%, rgba(111, 159, 104, 0) 45%),
+    radial-gradient(circle at 100% 0%, #b9dcc0 0%, rgba(185, 220, 192, 0) 50%),
+    linear-gradient(160deg, #f3f9e6 0%, #c7e1bf 50%, #a7cc9f 100%);
 }
 
 .headerDiv {
