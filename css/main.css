@@ -19,8 +19,14 @@ html,body {
   margin: 5px;
 }
 
+/* Deep coral: 5.2:1 contrast on the aqua highlight, 5.9:1 on white (passes WCAG AA) */
 a {
-  color: rgba(244, 67, 54)
+  color: #b23a2f;
+}
+
+a.highlight:hover,
+a.highlight:focus {
+  color: #8f2c23;
 }
 
 li {
@@ -74,14 +80,6 @@ li {
 }
 
 .headerDiv a:hover {
-  color: rgb(244, 67, 54);
-}
-
-.pictureDiv a:link, a:visited {
-  color: black;
-}
-
-.pictureDiv a:hover {
   color: rgb(244, 67, 54);
 }
 
@@ -441,34 +439,40 @@ img.hover-shadow {
     max-width: 70%;
     order: -1;
   }
+  /* Phones: show just the intro text box, no photo */
+  .pictureDiv {
+    display: none;
+  }
 }
 
 /* Header confetti dots, positioned to stay clear of the photo and text at each width */
 @media (max-width: 479px) {
   .headerBG {
     --header-dots:
-      radial-gradient(circle at 8% 59%, #ff7f6b 0 5px, transparent 6px),
-      radial-gradient(circle at 92% 59%, #ffd166 0 4px, transparent 5px),
-      radial-gradient(circle at 8% 96%, #3ec1c9 0 5px, transparent 6px),
-      radial-gradient(circle at 7% 4%, #ff7f6b 0 4px, transparent 5px),
-      radial-gradient(circle at 92% 96%, #ffffff 0 5px, transparent 6px),
-      radial-gradient(circle at 93% 4%, #ffd166 0 4px, transparent 5px);
+      radial-gradient(circle at 7% 6%, #ff7f6b 0 4px, transparent 5px),
+      radial-gradient(circle at 7% 66%, #ffd166 0 4px, transparent 5px),
+      radial-gradient(circle at 93% 6%, #3ec1c9 0 4px, transparent 5px),
+      radial-gradient(circle at 93% 66%, #ff7f6b 0 4px, transparent 5px),
+      radial-gradient(circle at 7% 36%, #ffffff 0 4px, transparent 5px),
+      radial-gradient(circle at 93% 36%, #ffd166 0 4px, transparent 5px);
   }
 }
+
 
 @media (min-width: 480px) and (max-width: 767px) {
   .headerBG {
     --header-dots:
-      radial-gradient(circle at 12% 61%, #ff7f6b 0 6px, transparent 7px),
-      radial-gradient(circle at 88% 61%, #ffd166 0 8px, transparent 9px),
-      radial-gradient(circle at 7% 5%, #3ec1c9 0 5px, transparent 6px),
-      radial-gradient(circle at 93% 5%, #ff7f6b 0 7px, transparent 8px),
-      radial-gradient(circle at 82% 95%, #ffffff 0 5px, transparent 6px),
-      radial-gradient(circle at 7% 95%, #ffd166 0 6px, transparent 7px),
-      radial-gradient(circle at 7% 34%, #3ec1c9 0 4px, transparent 5px),
-      radial-gradient(circle at 93% 34%, #ffffff 0 7px, transparent 8px);
+      radial-gradient(circle at 7% 9%, #ff7f6b 0 6px, transparent 7px),
+      radial-gradient(circle at 93% 9%, #ffd166 0 8px, transparent 9px),
+      radial-gradient(circle at 7% 69%, #3ec1c9 0 5px, transparent 6px),
+      radial-gradient(circle at 93% 69%, #ff7f6b 0 7px, transparent 8px),
+      radial-gradient(circle at 7% 39%, #ffffff 0 5px, transparent 6px),
+      radial-gradient(circle at 93% 39%, #ffd166 0 6px, transparent 7px),
+      radial-gradient(circle at 10% 93%, #3ec1c9 0 4px, transparent 5px),
+      radial-gradient(circle at 92% 92%, #ffffff 0 7px, transparent 8px);
   }
 }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .headerBG {
     --header-dots:
