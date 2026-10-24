@@ -451,6 +451,9 @@ img.hover-shadow {
   }
   #headerName {
     text-align: center;
+    /* Scale with the screen so the full name fits on one line in the box */
+    font-size: min(46px, 9vw);
+    white-space: nowrap;
   }
 }
 
