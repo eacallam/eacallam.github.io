@@ -333,9 +333,14 @@ img.hover-shadow {
 }
 
 .resumeImage {
-  max-width: 150px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top center;
   margin: 5px;
   border: 1px solid black;
+  background-color: #fff;
 }
 
 .resumeImage:hover {
@@ -343,16 +348,24 @@ img.hover-shadow {
 }
 
 .modalImage {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  max-height: 70vh;
+  object-fit: contain;
+  margin: 5px auto;
   border: 1px solid black;
-  margin: 5px;
-  max-width: 500px;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
   .modalImage {
-    border: 1px solid black;
-    margin: 5px;
-    max-width: 200px;
+    height: 320px;
+  }
+  .resumeImage {
+    width: 90px;
+    height: 90px;
   }
   .headerBG {
     display: flex;
