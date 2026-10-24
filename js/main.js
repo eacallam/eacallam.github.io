@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#1').on('click', function () {
-        $("#headerPicture").attr('src', "img/garden.jpeg");
+        $("#headerPicture").attr('src', "img/jump.jpg");
     });
 
     $('#2').on('click', function () {
@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     $('#3').on('click', function () {
-        $("#headerPicture").attr('src', "img/jump.jpg");
+        $("#headerPicture").attr('src', "img/garden.jpeg");
     });
 
     $('#4').on('click', function () {
