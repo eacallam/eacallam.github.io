@@ -32,7 +32,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   min-height: 400px;
-  /* Beach palette from the jumping photo: sky, sea, sand, puffy clouds, coral & sun accents */
+  /* Beach palette from the jumping photo: sky, sea, puffy clouds, coral & sun accents */
   background-color: #cfe9f3;
   background-image:
     radial-gradient(circle at 7% 12%, #ff7f6b 0 6px, transparent 7px),
@@ -49,8 +49,8 @@ li {
     radial-gradient(ellipse 52px 24px at 76% 4%, rgba(255, 255, 255, 0.8) 0 98%, transparent 100%),
     /* sun glow */
     radial-gradient(circle at 98% 0%, #fff1b8 0%, rgba(255, 241, 184, 0) 30%),
-    /* sky -> sea -> sand */
-    linear-gradient(180deg, #bfe3f5 0%, #d9f0f7 38%, #8fd6d6 62%, #b9e6df 72%, #f6e3bf 86%, #ecd3a6 100%);
+    /* sky -> sea */
+    linear-gradient(180deg, #bfe3f5 0%, #d9f0f7 38%, #8fd6d6 60%, #b4e6e2 74%, #9fdcd8 88%, #86cfd3 100%);
 }
 
 .headerDiv {
