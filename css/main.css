@@ -24,9 +24,15 @@ a {
   color: #b23a2f;
 }
 
+a.highlight {
+  transition: color 0.2s, background-color 0.2s;
+}
+
+/* Hover lightens: lighter coral on a paler aqua, still 4.9:1 contrast */
 a.highlight:hover,
 a.highlight:focus {
-  color: #8f2c23;
+  color: #c33f33;
+  background-color: #f2fbfa;
 }
 
 li {
