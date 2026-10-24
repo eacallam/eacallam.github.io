@@ -268,6 +268,37 @@ form .field_with_errors ~ label
   font-family: 'Roboto Mono', monospace;
 }
 
+/* Stacked roles at one company sit close together */
+.resumeSecondaryHeader.resumeRole {
+  margin-bottom: 4px;
+}
+
+.resumeSummary {
+  margin: 12px 0 6px;
+}
+
+.resumeSectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.resumeSectionTitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 8px auto 0;
+  border-radius: 2px;
+  background: #3ec1c9;
+}
+
+.communityName {
+  font-weight: 600;
+}
+
 .row > .column {
   padding: 0 5px;
 }
