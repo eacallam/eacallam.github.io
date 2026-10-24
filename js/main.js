@@ -6,7 +6,7 @@ var showText = function (target, message, index, interval) {
 }
 
 $(function () {
-    showText("#headerName", "elizabeth linthicum", 0, 150);
+    showText("#headerName", "Elizabeth Linthicum", 0, 150);
 });
 
 function openFirstModal() {

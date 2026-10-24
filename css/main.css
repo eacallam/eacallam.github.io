@@ -111,8 +111,12 @@ li {
 }
 
 #headerName {
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  min-height: 1.2em; /* hold space while the name types out */
 }
 
 .headerName:hover {
@@ -451,6 +455,7 @@ img.hover-shadow {
       radial-gradient(circle at 93% 4%, #ffd166 0 4px, transparent 5px);
   }
 }
+
 @media (min-width: 480px) and (max-width: 767px) {
   .headerBG {
     --header-dots:
