@@ -1,25 +1,3 @@
-$(document).ready(function () {
-    $('#1').on('click', function () {
-        $("#headerPicture").attr('src', "img/jump.jpg");
-    });
-
-    $('#2').on('click', function () {
-        $("#headerPicture").attr('src', "img/beth.jpg");
-    });
-
-    $('#3').on('click', function () {
-        $("#headerPicture").attr('src', "img/garden.jpeg");
-    });
-
-    $('#4').on('click', function () {
-        $("#headerPicture").attr('src', "img/computer.JPG");
-    });
-
-
-});
-
-
-
 var showText = function (target, message, index, interval) {
     if (index < message.length) {
         $(target).append(message[index++]);
