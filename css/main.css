@@ -449,6 +449,9 @@ img.hover-shadow {
   .pictureDiv {
     display: none;
   }
+  #headerName {
+    text-align: center;
+  }
 }
 
 /* Header confetti dots, positioned to stay clear of the photo and text at each width */
