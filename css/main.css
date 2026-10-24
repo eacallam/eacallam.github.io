@@ -65,10 +65,13 @@ li {
 }
 
 #headerPicture {
-  object-fit: contain;
-  max-width: 260px;
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 310px;
+  object-fit: cover;
+  object-position: center 30%;
   border: 1px solid black;
-  float: right;
 }
 
 #emailForm {
