@@ -431,9 +431,28 @@ img.hover-shadow {
   .modalImage {
     height: 320px;
   }
+  /* Phones: three thumbnails share one row, each a third of the width */
+  .resumeContentContainer .row {
+    display: flex;
+    gap: 8px;
+    margin-left: 0;
+  }
+  .resumeContentContainer .row:after {
+    display: none;
+  }
+  .resumeContentContainer .row > .column {
+    float: none;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 150px;
+    padding: 0;
+  }
   .resumeImage {
-    width: 90px;
-    height: 90px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
   }
   .headerBG {
     display: flex;
