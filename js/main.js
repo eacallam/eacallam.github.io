@@ -6,7 +6,13 @@ var showText = function (target, message, index, interval) {
 }
 
 $(function () {
-    showText("#headerName", "Elizabeth Linthicum", 0, 150);
+    var name = "Elizabeth Linthicum";
+    // Phones: show the name right away; larger screens: type it out
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        $("#headerName").text(name);
+    } else {
+        showText("#headerName", name, 0, 150);
+    }
 });
 
 function openFirstModal() {
