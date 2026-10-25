@@ -1,15 +1,15 @@
 var showText = function (target, message, index, interval) {
     if (index < message.length) {
-        $(target).append(message[index++]);
+        document.querySelector(target).textContent += message[index++];
         setTimeout(function () { showText(target, message, index, interval); }, interval);
     }
 }
 
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
     var name = "Elizabeth Linthicum";
     // Phones: show the name right away; larger screens: type it out
     if (window.matchMedia("(max-width: 767px)").matches) {
-        $("#headerName").text(name);
+        document.querySelector("#headerName").textContent = name;
     } else {
         showText("#headerName", name, 0, 150);
     }
