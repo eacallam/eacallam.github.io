@@ -44,8 +44,9 @@ li {
 .headerBG {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 16px;
   /* Sunset palette: peach and pink into lavender and soft blue, with a warm glow */
   background-color: #fbd3cf;
   background-image:
@@ -54,12 +55,11 @@ li {
 }
 
 .headerDiv {
-  height: 80%;
-  max-width: 50%;
+  max-width: 720px;
   font-size: 14.5px;
   background: rgba(255, 255, 255, 0.9);
   margin: 15px;
-  padding: 10px;
+  padding: 22px 32px;
   box-shadow: 0 4px 18px rgba(120, 70, 110, 0.22);
   border-radius: 5px;
 }
@@ -72,16 +72,6 @@ li {
   color: #a8325e;
 }
 
-#headerPicture {
-  display: block;
-  box-sizing: border-box;
-  width: 260px;
-  height: 310px;
-  object-fit: cover;
-  object-position: center 30%;
-  border: 1px solid black;
-}
-
 #emailForm {
   margin: 10px;
   color: black;
@@ -90,11 +80,6 @@ li {
 
 #emailForm a {
   color: black;
-}
-
-.pictureDiv {
-  max-width: 260px;
-  margin: 15px;
 }
 
 #headerName {
@@ -433,23 +418,16 @@ img.hover-shadow {
     margin: 0;
   }
   .headerBG {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    min-height: 400px;
+    padding: 24px 16px;
   }
   .headerDiv {
-    max-width: 70%;
-    order: -1;
+    margin: 0;
+    padding: 16px;
     text-align: center;
-  }
-  /* Phones: show just the intro text box, no photo */
-  .pictureDiv {
-    display: none;
   }
   #headerName {
     /* Scale with the screen so the full name fits on one line in the box */
-    font-size: min(42px, 7vw);
+    font-size: min(42px, 8vw);
     white-space: nowrap;
   }
 }
