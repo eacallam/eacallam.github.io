@@ -227,6 +227,8 @@ form .field_with_errors ~ label
 
 .resumeHeader {
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin-top: 1em;
   border-bottom: 3px solid #f6d5dc;
   border-image: linear-gradient(90deg, #ffc9b3, #f7b6c6, #d9c9f2) 1;
   font-size: 1.5rem;
@@ -235,7 +237,7 @@ form .field_with_errors ~ label
 
 .resumeSecondaryHeader {
   margin-top: 0px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -335,6 +337,15 @@ form .field_with_errors ~ label
   max-width: 700px;
 }
 
+/* Slideshow controls are real buttons; reset the browser's button look */
+.close, .prev, .next, .thumbButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
 .close {
   color: white;
   position: absolute;
@@ -346,12 +357,12 @@ form .field_with_errors ~ label
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #f3c6d1;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modalSlidesFirst, .modalSlidesSecond, .modalSlidesThird {
+.modalSlide {
   display: none;
   width: 75%;
   margin: auto;
@@ -365,7 +376,7 @@ form .field_with_errors ~ label
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #4a2c4f;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -398,8 +409,29 @@ img.hover-shadow {
   background-color: #fff;
 }
 
-.resumeImage:hover {
-  cursor: grab;
+.thumbButton {
+  display: block;
+  border-radius: 2px;
+}
+
+/* Clear focus rings for keyboard users */
+.thumbButton:focus-visible,
+.prev:focus-visible,
+.next:focus-visible {
+  outline: 3px solid #a8325e;
+  outline-offset: 2px;
+}
+
+.close:focus-visible {
+  outline: 3px solid #ffd68c;
+  outline-offset: 2px;
+}
+
+.slideCount {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #4a2c4f;
+  margin: 4px 0 8px;
 }
 
 .modalImage {
@@ -433,6 +465,9 @@ img.hover-shadow {
     min-width: 0;
     max-width: 150px;
     padding: 0;
+  }
+  .thumbButton {
+    width: 100%;
   }
   .resumeImage {
     box-sizing: border-box;

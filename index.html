@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="pageContainer">
-      <div class="headerBG">
+      <header class="headerBG">
           <div class="headerDiv">
             <h1 id="headerName">Elizabeth Linthicum</h1>
                 Hi, I'm Elizabeth, a full-stack software developer based in Columbus, OH. With a background in healthcare technology, nonprofits, and social work, I love creating accessible experiences that improve people's lives.
@@ -26,20 +26,21 @@
                 <br /><br \> 
                 I'm currently <strong>open to new opportunities</strong>, remote or in the Columbus area. Feel free to connect with me; I love meeting new people and discussing ideas.
               <p class="socialMedia">
-                <a class="socialMediaIcon" href="https://github.com/eacallam" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-                <a class="socialMediaIcon" href="https://linkedin.com/in/ecallam" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a> <a class="socialMediaIcon" href="mailto:bethcallam2@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+                <a class="socialMediaIcon" href="https://github.com/eacallam" target="_blank" rel="noopener" aria-label="GitHub profile (opens in a new tab)"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a class="socialMediaIcon" href="https://linkedin.com/in/ecallam" target="_blank" rel="noopener" aria-label="LinkedIn profile (opens in a new tab)"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a class="socialMediaIcon" href="mailto:bethcallam2@gmail.com" aria-label="Email Elizabeth"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
               </p>
           </div>
-      </div>
+      </header>
 
-      <div class="container">
+      <main class="container">
         <div class="languagesContainer">
           <p class="languagesTop highlight">JavaScript | Vue | Ruby | Rails | React | SQL | Responsive Design | A11y</p>
         </div>
         <div class="resumeContentContainer">
-          <p class="resumeHeader">Career Break</p>
+          <h2 class="resumeHeader">Career Break</h2>
             <p class="resumeSecondaryHeader">FEB 2025 - PRESENT, FULL-TIME PARENT</p>
-          <p class="resumeHeader">CoverMyMeds/McKesson</p>
+          <h2 class="resumeHeader">CoverMyMeds/McKesson</h2>
             <p class="resumeSecondaryHeader resumeRole">DEC 2021 - FEB 2025, SENIOR SOFTWARE DEVELOPER</p>
             <p class="resumeSecondaryHeader resumeRole">JAN 2019 - DEC 2021, SOFTWARE DEVELOPER</p>
             <p class="resumeSecondaryHeader">MAY 2018 - JAN 2019, SOFTWARE DEVELOPMENT APPRENTICE</p>
@@ -83,7 +84,7 @@
                 <a class="next" onclick="plusSlides(1, 'modalSlidesFirst')">&#10095;</a>
               </div>
             </div>  -->
-          <p class="resumeHeader">Shatter</p>
+          <h2 class="resumeHeader">Shatter</h2>
             <p class="resumeSecondaryHeader">JAN - SEP 2019, LEAD ENGINEER, PART-TIME</p>
             <ul class="resumeInfoList">
               <li class="resumeInfoItem">Founded in the 2018 <a href="https://givebackhack.com" class="highlight">GiveBackHack</a>, Shatter focuses on addressing unconscious gender bias in the job market</li>
@@ -92,36 +93,41 @@
             </ul>
             <div class="row">
               <div class="column">
-                <img src="img\ShatterOnboarding1.png" onclick="openSecondModal();currentSlide(1, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="gallerySecond" data-index="0" aria-label="View larger: Shatter Chrome extension pop-up over a LinkedIn page, explaining that Shatter scans job postings for masculine language">
+                  <img src="img/ShatterOnboarding1.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
               <div class="column">
-                <img src="img\ShatterHowItWorks.png" onclick="openSecondModal();currentSlide(2, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="gallerySecond" data-index="1" aria-label="View larger: Shatter homepage: “Shatter is a new approach to an old problem,” with sections on unconscious bias, the confidence gap and language bias">
+                  <img src="img/ShatterHowItWorks.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
               <div class="column">
-                <img src="img\ShatterCareerServices.png" onclick="openSecondModal();currentSlide(3, 'modalSlidesSecond')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="gallerySecond" data-index="2" aria-label="View larger: Shatter career services page offering resume reviews, with a three-step overview and a sign-in form">
+                  <img src="img/ShatterCareerServices.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
             </div>
-            <div id="resumeModalSecond" class="modal">
-              <span class="close cursor" onclick="closeSecondModal()">&times;</span>
+            <div id="gallerySecond" class="modal" role="dialog" aria-modal="true" aria-label="Shatter screenshots">
+              <button type="button" class="close" aria-label="Close">&times;</button>
               <div class="modal-content">
-
-                <div class="modalSlidesSecond">
-                  <img src="img\ShatterOnboarding1.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/ShatterOnboarding1.png" class="modalImage" alt="Shatter Chrome extension pop-up over a LinkedIn page, explaining that Shatter scans job postings for masculine language">
+                  <p class="slideCount">1 of 3</p>
                 </div>
-
-                <div class="modalSlidesSecond">
-                  <img src="img\ShatterHowItWorks.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/ShatterHowItWorks.png" class="modalImage" alt="Shatter homepage: “Shatter is a new approach to an old problem,” with sections on unconscious bias, the confidence gap and language bias">
+                  <p class="slideCount">2 of 3</p>
                 </div>
-
-                <div class="modalSlidesSecond">
-                  <img src="img\ShatterCareerServices.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/ShatterCareerServices.png" class="modalImage" alt="Shatter career services page offering resume reviews, with a three-step overview and a sign-in form">
+                  <p class="slideCount">3 of 3</p>
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'modalSlidesSecond')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'modalSlidesSecond')">&#10095;</a>
+                <button type="button" class="prev" aria-label="Previous screenshot">&#10094;</button>
+                <button type="button" class="next" aria-label="Next screenshot">&#10095;</button>
               </div>
-            </div> 
-          <p class="resumeHeader">WeCanCodeIT</p>
+            </div>
+          <h2 class="resumeHeader">WeCanCodeIT</h2>
             <p class="resumeSecondaryHeader">FALL 2017, CERTIFICATE IN SOFTWARE DEVELOPMENT</p>
             <ul class="resumeInfoList">
               <li class="resumeInfoItem">Learned full-stack development through instruction and hands-on projects</li>
@@ -129,36 +135,41 @@
             </ul>
             <div class="row">
               <div class="column">
-                <img src="img\Wardrobe.png" onclick="openThirdModal();currentSlide(1, 'modalSlidesThird')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="galleryThird" data-index="0" aria-label="View larger: Wardrobe website with a “Choose Your Look” menu of tops, bottoms, shoes and accessories">
+                  <img src="img/Wardrobe.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
               <div class="column">
-                <img src="img\TuscanyVilla.png" onclick="openThirdModal();currentSlide(2, 'modalSlidesThird')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="galleryThird" data-index="1" aria-label="View larger: Tuscany villa rental website with photo panels for the views and private dining, a “Book your villa” section and customer reviews">
+                  <img src="img/TuscanyVilla.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
               <div class="column">
-                <img src="img\ReviewSite.png" onclick="openThirdModal();currentSlide(3, 'modalSlidesThird')" class="hover-shadow resumeImage">
+                <button type="button" class="thumbButton" data-gallery="galleryThird" data-index="2" aria-label="View larger: Callam Review Hub, a community business review website with sections for getting started and writing reviews">
+                  <img src="img/ReviewSite.png" alt="" class="hover-shadow resumeImage">
+                </button>
               </div>
             </div>
-            <div id="resumeModalThird" class="modal">
-              <span class="close cursor" onclick="closeThirdModal()">&times;</span>
+            <div id="galleryThird" class="modal" role="dialog" aria-modal="true" aria-label="WeCanCodeIT project screenshots">
+              <button type="button" class="close" aria-label="Close">&times;</button>
               <div class="modal-content">
-
-                <div class="modalSlidesThird">
-                  <img src="img\Wardrobe.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/Wardrobe.png" class="modalImage" alt="Wardrobe website with a “Choose Your Look” menu of tops, bottoms, shoes and accessories">
+                  <p class="slideCount">1 of 3</p>
                 </div>
-
-                <div class="modalSlidesThird">
-                  <img src="img\TuscanyVilla.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/TuscanyVilla.png" class="modalImage" alt="Tuscany villa rental website with photo panels for the views and private dining, a “Book your villa” section and customer reviews">
+                  <p class="slideCount">2 of 3</p>
                 </div>
-
-                <div class="modalSlidesThird">
-                  <img src="img\ReviewSite.png" class="modalImage">
+                <div class="modalSlide">
+                  <img src="img/ReviewSite.png" class="modalImage" alt="Callam Review Hub, a community business review website with sections for getting started and writing reviews">
+                  <p class="slideCount">3 of 3</p>
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'modalSlidesThird')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'modalSlidesThird')">&#10095;</a>
+                <button type="button" class="prev" aria-label="Previous screenshot">&#10094;</button>
+                <button type="button" class="next" aria-label="Next screenshot">&#10095;</button>
               </div>
-            </div> 
-          <p class="resumeHeader">University of Notre Dame</p>
+            </div>
+          <h2 class="resumeHeader">University of Notre Dame</h2>
             <p class="resumeSecondaryHeader">2013, BACHELOR OF ARTS, NOTRE DAME, IN</p>
             <ul class="resumeInfoList">
               <li class="resumeInfoItem">Anthropology, <em>summa cum laude</em></li>
@@ -167,18 +178,18 @@
 
           <h2 class="resumeSectionTitle">Earlier Experience</h2>
             <div class="earlyJob">
-              <p class="earlyHeader">The Legal Aid Society of Cleveland <span class="earlyPlace">Cleveland, OH</span></p>
+              <h3 class="earlyHeader">The Legal Aid Society of Cleveland <span class="earlyPlace">Cleveland, OH</span></h3>
               <p class="resumeSecondaryHeader">APR 2016 - APR 2018, ADMINISTRATIVE ASSISTANT, VOLUNTEER LAWYERS PROGRAM</p>
               <p class="earlyDesc">Provided critical administrative support to staff and volunteer lawyers at a non-profit law firm.</p>
             </div>
             <div class="earlyJob">
-              <p class="earlyHeader">Sacred Heart Schools <span class="earlyPlace">Chicago, IL</span></p>
+              <h3 class="earlyHeader">Sacred Heart Schools <span class="earlyPlace">Chicago, IL</span></h3>
               <p class="resumeSecondaryHeader resumeRole">NOV 2015 - APR 2016, CAMPAIGN &amp; SPECIAL PROJECTS COORDINATOR</p>
               <p class="resumeSecondaryHeader">AUG 2014 - NOV 2015, INSTITUTIONAL ADVANCEMENT ASSISTANT</p>
               <p class="earlyDesc">Supported the Director of Institutional Advancement in executing the school&rsquo;s largest capital campaign ($9.7M).</p>
             </div>
             <div class="earlyJob">
-              <p class="earlyHeader">Mercy Home for Boys &amp; Girls <span class="earlyPlace">Chicago, IL</span></p>
+              <h3 class="earlyHeader">Mercy Home for Boys &amp; Girls <span class="earlyPlace">Chicago, IL</span></h3>
               <p class="resumeSecondaryHeader">JUL 2013 - AUG 2014, AMERICORPS VOLUNTEER: SOCIAL WORK</p>
             </div>
 
@@ -191,7 +202,7 @@
               <li class="resumeInfoItem"><span class="communityName">Global Legal Hackathon</span> (2018): Overall Winner in Dayton, OH</li>
             </ul>
         </div>
-      </div>
+      </main>
 
         <!-- <div id="emailForm" class="form-group">
           <form action="https://formspree.io/ecallam@alumni.nd.edu"
