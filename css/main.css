@@ -19,20 +19,22 @@ html,body {
   margin: 5px;
 }
 
-/* Deep coral: 5.2:1 contrast on the aqua highlight, 5.9:1 on white (passes WCAG AA) */
+/* Sunset accent colors used across the page:
+   rose #a8325e (links), blush #fdeef1 (highlights), lavender #d9c9f2.
+   Deep rose links: 5.7:1 contrast on the blush highlight, 6.4:1 on white (WCAG AA). */
 a {
-  color: #b23a2f;
+  color: #a8325e;
 }
 
 a.highlight {
   transition: color 0.2s, background-color 0.2s;
 }
 
-/* Hover lightens: lighter coral on a paler aqua, still 4.9:1 contrast */
+/* Hover lightens: lighter rose on a paler blush, still 4.9:1 contrast */
 a.highlight:hover,
 a.highlight:focus {
-  color: #c33f33;
-  background-color: #f2fbfa;
+  color: #b8456b;
+  background-color: #fff7f8;
 }
 
 li {
@@ -44,30 +46,11 @@ li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   min-height: 400px;
-  /* Beach palette from the jumping photo: sky, sea, puffy clouds, coral & sun accents.
-     The dots are placed per screen width (see media queries at the end of this file)
-     so they always sit in open space, clear of the photo and text box. */
-  --header-dots:
-    radial-gradient(circle at 5% 18%, #ff7f6b 0 6px, transparent 7px),
-    radial-gradient(circle at 33% 40%, #ffd166 0 8px, transparent 9px),
-    radial-gradient(circle at 5% 78%, #3ec1c9 0 5px, transparent 6px),
-    radial-gradient(circle at 94% 81%, #ff7f6b 0 7px, transparent 8px),
-    radial-gradient(circle at 95% 18%, #ffffff 0 5px, transparent 6px),
-    radial-gradient(circle at 53% 85%, #ffd166 0 6px, transparent 7px),
-    radial-gradient(circle at 29% 89%, #3ec1c9 0 4px, transparent 5px),
-    radial-gradient(circle at 74% 85%, #ffffff 0 7px, transparent 8px);
-  --header-scene:
-    /* clouds */
-    radial-gradient(ellipse 70px 26px at 24% 16%, rgba(255, 255, 255, 0.85) 0 98%, transparent 100%),
-    radial-gradient(ellipse 44px 22px at 28% 12%, rgba(255, 255, 255, 0.85) 0 98%, transparent 100%),
-    radial-gradient(ellipse 90px 28px at 72% 8%, rgba(255, 255, 255, 0.8) 0 98%, transparent 100%),
-    radial-gradient(ellipse 52px 24px at 76% 4%, rgba(255, 255, 255, 0.8) 0 98%, transparent 100%),
-    /* sun glow */
-    radial-gradient(circle at 98% 0%, #fff1b8 0%, rgba(255, 241, 184, 0) 30%),
-    /* sky -> sea */
-    linear-gradient(180deg, #bfe3f5 0%, #d9f0f7 38%, #8fd6d6 60%, #b4e6e2 74%, #9fdcd8 88%, #86cfd3 100%);
-  background-color: #cfe9f3;
-  background-image: var(--header-dots), var(--header-scene);
+  /* Sunset palette: peach and pink into lavender and soft blue, with a warm glow */
+  background-color: #fbd3cf;
+  background-image:
+    radial-gradient(circle at 85% 15%, rgba(255, 214, 140, 0.75) 0, rgba(255, 214, 140, 0) 35%),
+    linear-gradient(160deg, #ffd6c9 0%, #fbc6d0 40%, #d9c9f2 75%, #bcd4f5 100%);
 }
 
 .headerDiv {
@@ -77,16 +60,16 @@ li {
   background: rgba(255, 255, 255, 0.9);
   margin: 15px;
   padding: 10px;
-  box-shadow: 1px 1px 10px lightslategrey;
+  box-shadow: 0 4px 18px rgba(120, 70, 110, 0.22);
   border-radius: 5px;
 }
 
-.headerDiv a:link, a:visited {
+.headerDiv a:link, .headerDiv a:visited {
   color: black;
 }
 
 .headerDiv a:hover {
-  color: rgb(244, 67, 54);
+  color: #a8325e;
 }
 
 #headerPicture {
@@ -162,7 +145,7 @@ li {
 }
 
 .languagesTop.highlight {
-  border: 1px solid #a9dcda;
+  border: 1px solid #f3c6d1;
   padding: 4px 14px;
 }
 
@@ -241,15 +224,15 @@ form .field_with_errors ~ label
 }
 
 .highlight {
-  background: #e0f4f3; /* Default color, all browsers */
+  background: #fdeef1; /* Default color, all browsers */
 }
 
 .highlight::selection {
-  background: #e0f4f3; /* Selection color, WebKit/Blink Browsers */
+  background: #fdeef1; /* Selection color, WebKit/Blink Browsers */
 }
 
 .highlight::-moz-selection {
-  background: #e0f4f3; /* Selection color, Gecko Browsers */
+  background: #fdeef1; /* Selection color, Gecko Browsers */
 }
 
 .resumeContentContainer {
@@ -259,7 +242,8 @@ form .field_with_errors ~ label
 
 .resumeHeader {
   font-family: 'Playfair Display', serif;
-  border-bottom: 3px solid #f1eccd;
+  border-bottom: 3px solid #f6d5dc;
+  border-image: linear-gradient(90deg, #ffc9b3, #f7b6c6, #d9c9f2) 1;
   font-size: 1.5rem;
   margin-bottom: 0.4rem;
 }
@@ -294,7 +278,7 @@ form .field_with_errors ~ label
   height: 4px;
   margin: 8px auto 0;
   border-radius: 2px;
-  background: #3ec1c9;
+  background: linear-gradient(90deg, #ffb38a, #e58aa5, #a98be0);
 }
 
 .communityName {
@@ -330,12 +314,12 @@ form .field_with_errors ~ label
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: #221628;
 }
 
 .modal-content {
   position: relative;
-  background-color: #f1ebd2;
+  background-color: #fdf3f0;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -467,68 +451,5 @@ img.hover-shadow {
     /* Scale with the screen so the full name fits on one line in the box */
     font-size: min(42px, 7vw);
     white-space: nowrap;
-  }
-}
-
-/* Header confetti dots, positioned to stay clear of the photo and text at each width */
-@media (max-width: 479px) {
-  .headerBG {
-    --header-dots:
-      radial-gradient(circle at 7% 6%, #ff7f6b 0 4px, transparent 5px),
-      radial-gradient(circle at 7% 66%, #ffd166 0 4px, transparent 5px),
-      radial-gradient(circle at 93% 6%, #3ec1c9 0 4px, transparent 5px),
-      radial-gradient(circle at 93% 66%, #ff7f6b 0 4px, transparent 5px),
-      radial-gradient(circle at 7% 36%, #ffffff 0 4px, transparent 5px),
-      radial-gradient(circle at 93% 36%, #ffd166 0 4px, transparent 5px);
-  }
-}
-
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .headerBG {
-    --header-dots:
-      radial-gradient(circle at 7% 9%, #ff7f6b 0 6px, transparent 7px),
-      radial-gradient(circle at 93% 9%, #ffd166 0 8px, transparent 9px),
-      radial-gradient(circle at 7% 69%, #3ec1c9 0 5px, transparent 6px),
-      radial-gradient(circle at 93% 69%, #ff7f6b 0 7px, transparent 8px),
-      radial-gradient(circle at 7% 39%, #ffffff 0 5px, transparent 6px),
-      radial-gradient(circle at 93% 39%, #ffd166 0 6px, transparent 7px),
-      radial-gradient(circle at 10% 93%, #3ec1c9 0 4px, transparent 5px),
-      radial-gradient(circle at 92% 92%, #ffffff 0 7px, transparent 8px);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .headerBG {
-    --header-dots:
-      radial-gradient(circle at 6% 90%, #ff7f6b 0 4px, transparent 5px),
-      radial-gradient(circle at 22% 90%, #ffd166 0 5px, transparent 6px),
-      radial-gradient(circle at 38% 89%, #3ec1c9 0 5px, transparent 6px);
-  }
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .headerBG {
-    --header-dots:
-      radial-gradient(circle at 37% 86%, #ff7f6b 0 6px, transparent 7px),
-      radial-gradient(circle at 67% 87%, #ffd166 0 8px, transparent 9px),
-      radial-gradient(circle at 5% 89%, #3ec1c9 0 5px, transparent 6px),
-      radial-gradient(circle at 36% 11%, #ff7f6b 0 7px, transparent 8px),
-      radial-gradient(circle at 96% 10%, #ffffff 0 5px, transparent 6px),
-      radial-gradient(circle at 96% 70%, #ffd166 0 6px, transparent 7px),
-      radial-gradient(circle at 4% 10%, #3ec1c9 0 4px, transparent 5px),
-      radial-gradient(circle at 4% 50%, #ffffff 0 7px, transparent 8px);
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .headerBG {
-    --header-dots:
-      radial-gradient(circle at 35% 81%, #ff7f6b 0 6px, transparent 7px),
-      radial-gradient(circle at 94% 83%, #ffd166 0 8px, transparent 9px),
-      radial-gradient(circle at 34% 17%, #3ec1c9 0 5px, transparent 6px),
-      radial-gradient(circle at 5% 85%, #ff7f6b 0 7px, transparent 8px),
-      radial-gradient(circle at 95% 15%, #ffffff 0 5px, transparent 6px),
-      radial-gradient(circle at 4% 13%, #ffd166 0 6px, transparent 7px),
-      radial-gradient(circle at 64% 85%, #3ec1c9 0 4px, transparent 5px),
-      radial-gradient(circle at 5% 49%, #ffffff 0 7px, transparent 8px);
   }
 }
