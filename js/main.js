@@ -1,28 +1,3 @@
-// Types the name out one letter at a time. The letters not typed yet are
-// kept in place but invisible, so the centered name doesn't shift as it grows.
-var showText = function (target, message, index, interval) {
-    var el = document.querySelector(target);
-    var hidden = document.createElement("span");
-    hidden.style.visibility = "hidden";
-    hidden.textContent = message.slice(index);
-    el.textContent = message.slice(0, index);
-    el.appendChild(hidden);
-    el.setAttribute("aria-label", message);
-    if (index < message.length) {
-        setTimeout(function () { showText(target, message, index + 1, interval); }, interval);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    var name = "Elizabeth Linthicum";
-    // Phones: show the name right away; larger screens: type it out
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        document.querySelector("#headerName").textContent = name;
-    } else {
-        showText("#headerName", name, 0, 150);
-    }
-});
-
 function openFirstModal() {
     document.getElementById("resumeModalFirst").style.display = "block";
 }

@@ -122,7 +122,7 @@ li {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 10px;
-  min-height: 1.2em; /* hold space while the name types out */
+  margin-top: 0;
 }
 
 .headerName:hover {
@@ -457,6 +457,7 @@ img.hover-shadow {
   .headerDiv {
     max-width: 70%;
     order: -1;
+    text-align: center;
   }
   /* Phones: show just the intro text box, no photo */
   .pictureDiv {
