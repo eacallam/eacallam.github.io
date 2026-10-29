@@ -26,7 +26,10 @@ a {
   color: #a8325e;
 }
 
+/* Underlined so links don't rely on colour alone to stand out */
 a.highlight {
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -56,7 +59,7 @@ li {
 
 .headerDiv {
   max-width: 720px;
-  font-size: 14.5px;
+  font-size: 0.9rem;
   background: rgba(255, 255, 255, 0.9);
   margin: 15px;
   padding: 22px 32px;
@@ -85,7 +88,7 @@ li {
 #headerName {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 2.625rem;
   letter-spacing: 0.5px;
   line-height: 1.2;
   text-align: center;
@@ -110,7 +113,7 @@ li {
   text-align: center;
   color: white;
   padding-top: 15px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .socialMediaIcon {
@@ -134,16 +137,32 @@ li {
   padding: 4px 14px;
 }
 
+/* Skills: a real list, so screen readers don't read out "vertical bar".
+   It wraps on narrow screens instead of running off the side. */
 .languagesTop {
   color: black;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 50px;
+  font-size: 1.25rem;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  width: max-content;
-  margin: auto;
-  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 2px;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 15px auto 0;
+}
+
+.languagesTop li {
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+/* Visual divider between skills (a border, so nothing is read aloud) */
+.languagesTop li + li {
+  border-left: 1px solid currentColor;
 }
 
 form div label {
@@ -237,8 +256,10 @@ form .field_with_errors ~ label
 
 .resumeSecondaryHeader {
   margin-top: 0px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-family: 'Roboto Mono', monospace;
+  /* Written in normal case in the HTML so screen readers read words, not letters */
+  text-transform: uppercase;
 }
 
 /* Stacked roles at one company sit close together */
@@ -305,6 +326,9 @@ form .field_with_errors ~ label
     padding: 16px;
     text-align: center;
   }
+  .languagesTop {
+    font-size: 1.1rem;
+  }
   /* Phones: put the city under the employer name */
   .earlyPlace {
     display: block;
@@ -312,7 +336,7 @@ form .field_with_errors ~ label
   }
   #headerName {
     /* Scale with the screen so the full name fits on one line in the box */
-    font-size: min(42px, 8vw);
+    font-size: min(2.625rem, 8vw);
     white-space: nowrap;
   }
 }
