@@ -259,6 +259,8 @@ form .field_with_errors ~ label
   font-size: 0.85rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
+  /* Softer than black, still 8.3:1 on white (WCAG AAA) for the light weight */
+  color: #5a4a55;
   /* Written in normal case in the HTML so screen readers read words, not letters */
   text-transform: uppercase;
 }
