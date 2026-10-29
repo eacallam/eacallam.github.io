@@ -258,6 +258,7 @@ form .field_with_errors ~ label
   margin-top: 0px;
   font-size: 0.85rem;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
   /* Written in normal case in the HTML so screen readers read words, not letters */
   text-transform: uppercase;
 }
