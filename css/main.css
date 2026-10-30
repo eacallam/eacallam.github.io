@@ -123,6 +123,13 @@ li {
   letter-spacing: 3px;
 }
 
+.socialMediaIcon .icon {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
 #shatter {
   background-color: white;
   opacity: 0.8;
